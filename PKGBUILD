@@ -35,4 +35,5 @@ package() {
   install -Dm644 "$startdir/build/runtime/resources/icon-chatgpt.png" \
     "$pkgdir/usr/share/pixmaps/chatgpt-linux.png"
   install -Dm644 "$startdir/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 "$startdir/NOTICE.md" "$pkgdir/usr/share/licenses/$pkgname/NOTICE.md"
 }

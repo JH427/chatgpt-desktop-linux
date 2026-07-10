@@ -126,4 +126,4 @@ Before contributing, read [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECU
 
 ## License and legal notice
 
-Original compatibility-layer code in this repository is available under the [MIT License](LICENSE). That license does not apply to OpenAI's application, trademarks, services, or proprietary assets. Users are responsible for obtaining the upstream application legitimately and complying with all applicable terms and laws.
+Original compatibility-layer code in this repository is available under the [MIT License](LICENSE). That license does not apply to OpenAI's application, trademarks, services, or proprietary assets. Users are responsible for obtaining the upstream application legitimately and complying with all applicable terms and laws. See [NOTICE.md](NOTICE.md) for trademark and upstream-asset notices.
