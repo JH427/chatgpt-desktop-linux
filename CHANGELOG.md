@@ -20,3 +20,7 @@ All notable compatibility-layer changes are documented here.
 
 - Browser automation is unavailable without an OpenAI-compatible Linux `node_repl` host.
 - Portal/libei desktop automation, ARM64, and non-Arch packaging remain future work.
+
+### Security
+
+- Updated `@electron/rebuild` to 4.2.0, removing its vulnerable `tar` 6 dependency; the complete dependency tree now audits cleanly.
