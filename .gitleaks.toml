@@ -1,0 +1,14 @@
+title = "chatgpt-desktop-linux secret scanning"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Generated and proprietary local-only paths are never repository content"
+paths = [
+  '''^\.cache/''',
+  '''^\.tools/''',
+  '''^build/''',
+  '''^dist/''',
+  '''^node_modules/''',
+]

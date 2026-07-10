@@ -1,0 +1,28 @@
+{
+  "name": "chatgpt-desktop-linux",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Source-auditable Linux compatibility and Arch packaging for OpenAI's unified ChatGPT desktop app",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "assemble": "node scripts/build-runtime.mjs '.cache/upstream/ChatGPT Installer/ChatGPT.app/Contents'",
+    "check": "scripts/check-runtime.sh build/runtime && tests/computer-use-smoke.sh",
+    "check:source": "tests/source-checks.sh"
+  },
+  "devDependencies": {
+    "@electron/asar": "3.4.1",
+    "@electron/rebuild": "4.0.1",
+    "electron": "42.1.0"
+  },
+  "dependencies": {
+    "@img/sharp-libvips-linux-x64": "1.2.4",
+    "@img/sharp-linux-x64": "0.34.5",
+    "@napi-rs/canvas-linux-x64-gnu": "0.1.91",
+    "better-sqlite3": "12.9.0",
+    "node-hid": "3.3.0",
+    "node-pty": "1.1.0"
+  }
+}

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=ChatGPT
+GenericName=AI assistant and coding agent
+Comment=OpenAI ChatGPT and Codex desktop application
+Exec=/usr/bin/chatgpt-linux %U
+Icon=chatgpt-linux
+Terminal=false
+Categories=Development;
+StartupNotify=true
+StartupWMClass=chatgpt
+MimeType=x-scheme-handler/codex;application/vnd.openai.codex.skill;text/csv;text/tab-separated-values;application/vnd.ms-excel;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;
+Keywords=ChatGPT;Codex;OpenAI;AI;

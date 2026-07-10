@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/JH427/chatgpt-desktop-linux/security/advisories/new
+    about: Report security issues privately
+  - name: OpenAI product support
+    url: https://help.openai.com/
+    about: Use official support for account, billing, or upstream service issues

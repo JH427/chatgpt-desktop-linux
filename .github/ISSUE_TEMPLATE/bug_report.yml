@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a reproducible Linux compatibility problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach credentials, authentication files, private prompts, proprietary application files, or unredacted logs.
+  - type: input
+    id: version
+    attributes:
+      label: Upstream application version
+      placeholder: 26.707.31428 (build 5059)
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Linux environment
+      description: Distribution, architecture, desktop/compositor, Wayland or X11, and GPU
+      placeholder: Arch Linux x86_64, Hyprland, Wayland, AMD
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Redacted diagnostics
+      description: Relevant output from scripts/doctor.sh. Remove usernames, paths, prompts, project names, and account details.
+      render: shell
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy checklist
+      options:
+        - label: I removed credentials, personal data, private prompts, and proprietary application files.
+          required: true

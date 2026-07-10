@@ -1,0 +1,32 @@
+{
+  "name": "computer-use",
+  "version": "1.0.1000366-linux.1",
+  "description": "Control the Linux desktop from ChatGPT through Computer Use.",
+  "author": {
+    "name": "OpenAI UI with community Linux adapter",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": ["computer-use", "desktop-control", "linux", "automation"],
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Computer Use",
+    "shortDescription": "Control Linux desktop applications",
+    "longDescription": "Linux Computer Use lets ChatGPT inspect and control applications through a local, reviewable adapter. Screen and input access remain subject to your X11 or desktop-portal permissions.",
+    "developerName": "OpenAI UI with community Linux adapter",
+    "category": "Productivity",
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "logo": "./assets/app-icon.png",
+    "defaultPrompt": [
+      "Inspect the active application and describe what is visible",
+      "Test my local application and report any broken interactions",
+      "Complete this desktop workflow and stop before any destructive action"
+    ],
+    "brandColor": "#0F172A",
+    "screenshots": []
+  }
+}

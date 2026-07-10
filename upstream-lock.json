@@ -1,0 +1,10 @@
+{
+  "source": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT.dmg",
+  "version": "26.707.31428",
+  "build": "5059",
+  "sha256": "6f67af7e2f934093ab8afebcec11374d40c8db8f9100fb6620f24155401d8319",
+  "electron": "42.1.0",
+  "node": "24.14.0",
+  "nodeLinuxX64Sha256": "41cd79bb7877c81605a9e68ec4c91547774f46a40c67a17e34d7179ef11729df",
+  "checkedAt": "2026-07-10T00:00:00Z"
+}

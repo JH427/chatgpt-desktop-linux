@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install validation tools
+        run: sudo apt-get update && sudo apt-get install -y desktop-file-utils shellcheck
+      - name: Install JavaScript dependencies without native build scripts
+        run: npm ci --ignore-scripts
+      - name: Validate source tree
+        run: tests/source-checks.sh
+      - name: Audit production dependencies
+        run: npm audit --omit=dev --audit-level=high
