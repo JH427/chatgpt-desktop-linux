@@ -13,7 +13,7 @@
     "check:source": "tests/source-checks.sh"
   },
   "devDependencies": {
-    "@electron/asar": "3.4.1",
+    "@electron/asar": "4.2.0",
     "@electron/rebuild": "4.0.1",
     "electron": "42.1.0"
   },
