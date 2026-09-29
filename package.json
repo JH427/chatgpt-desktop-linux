@@ -15,7 +15,7 @@
   "devDependencies": {
     "@electron/asar": "3.4.1",
     "@electron/rebuild": "4.2.0",
-    "electron": "42.1.0"
+    "electron": "42.10.0"
   },
   "dependencies": {
     "@img/sharp-libvips-linux-x64": "1.2.4",
